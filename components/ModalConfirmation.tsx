@@ -3,16 +3,15 @@ import Image from "next/image";
 import ModalCompletion from "./ModalCompletion";
 
 interface ModalConfirmationProps {
-  modalConfirmationPopup:boolean;
   setModalConfirmationPopup: (value: boolean) => void;
-  closeModalConfirmationPopup: () => void;
+  closeModalConfirmationPopup: (event: React.MouseEvent) => void;
   setModalCompletionPopup:(value: boolean) =>void;
   modalCompletionPopup:boolean;
-  openModalCompletionPopup: () => void;
-  closeModalCompletionPopup: () => void;
+  openModalCompletionPopup: (event: React.MouseEvent) => void;
+  closeModalCompletionPopup: (event: React.MouseEvent) => void;
 }
 
-const ModalConfirmation: React.FC<ModalConfirmationProps> = ({ modalConfirmationPopup,setModalConfirmationPopup, closeModalConfirmationPopup, setModalCompletionPopup, modalCompletionPopup, openModalCompletionPopup, closeModalCompletionPopup }) => {
+const ModalConfirmation: React.FC<ModalConfirmationProps> = ({ setModalConfirmationPopup, closeModalConfirmationPopup, setModalCompletionPopup, modalCompletionPopup, openModalCompletionPopup, closeModalCompletionPopup }) => {
   // const [modalCompletionPopup, setModalCompletionPopup] = React.useState(false);
 
   
