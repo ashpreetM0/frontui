@@ -71,7 +71,7 @@ const Crosschain = () => {
         {
         modalConfirmationPopup &&
         <ModalConfirmation
-          modalConfirmationPopup={modalConfirmationPopup}
+         
           setModalConfirmationPopup={setModalConfirmationPopup}
           closeModalConfirmationPopup={closeModalConfirmationPopup}
           setModalCompletionPopup={setModalCompletionPopup}
