@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 
 interface ModalCompletionProps {
     setModalCompletionPopup: (value: boolean) => void;
-    closeModalCompletionPopup: () => void;
+    closeModalCompletionPopup: (event: React.MouseEvent) => void;
   }
 
 const ModalCompletion: React.FC<ModalCompletionProps> = ({ setModalCompletionPopup, closeModalCompletionPopup }) => {
